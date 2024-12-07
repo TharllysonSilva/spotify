@@ -12,7 +12,7 @@ Future<void> main() async {
     storageDirectory: kIsWeb
         ? HydratedStorage.webStorageDirectory
         : await getApplicationDocumentsDirectory(),
-  );
+  )...
   runApp(const MyApp());
 }
 
