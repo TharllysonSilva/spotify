@@ -25,6 +25,15 @@ class GetStartedPage extends StatelessWidget {
                 image: AssetImage(AppImages.introBg),
               ),
             ),
+          ),
+          Container(
+            color: Colors.black.withOpacity(0.15),
+          ),
+          Padding(
+            padding: const EdgeInsets.symmetric(
+              vertical: 40,
+              horizontal: 40,
+            ),
             child: Column(
               children: [
                 Align(
@@ -48,7 +57,7 @@ class GetStartedPage extends StatelessWidget {
                   style: TextStyle(
                     fontWeight: FontWeight.w500,
                     color: AppColors.grey,
-                    fontSize: 14,
+                    fontSize: 13,
                   ),
                   textAlign: TextAlign.center,
                 ),
@@ -60,7 +69,8 @@ class GetStartedPage extends StatelessWidget {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (BuildContext context) => ChooseModePage(),
+                        builder: (BuildContext context) =>
+                            const ChooseModePage(),
                       ),
                     );
                   },
@@ -69,9 +79,6 @@ class GetStartedPage extends StatelessWidget {
               ],
             ),
           ),
-          Container(
-            color: Colors.black.withOpacity(0.15),
-          )
         ],
       ),
     );
