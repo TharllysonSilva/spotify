@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:spotify/presentation/pages/splash.dart';
+
+import 'core/configs/theme/app_theme.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,11 +14,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        title: 'Flutter Demo',
-        theme: ThemeData(
-          colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-          useMaterial3: true,
-        ),
-        home: Container());
+      theme: AppTheme.lightTheme,
+      home: const SplashPage(),
+    );
   }
 }
